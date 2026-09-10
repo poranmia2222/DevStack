@@ -14,16 +14,11 @@ function App() {
 
   return (
     <>
-      <header>
-        <Nav />
-        <Banner></Banner>
-      </header>
-      <main>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Technologies techologiesPromise={techologiesPromise()}></Technologies>
-        </Suspense>
-
-      </main>
+      <Nav />
+      <Banner></Banner>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Technologies techologiesPromise={techologiesPromise()}></Technologies>
+      </Suspense>
     </>
   )
 }
