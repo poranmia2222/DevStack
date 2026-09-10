@@ -1,6 +1,7 @@
 import { use } from "react";
 import type { TechnologyType } from "../../Types/type";
 import TechnologiesCards from "../TechnologyCards/TechnologyCard";
+import Stack from "../Stack/Stack";
 
 interface TechnologiesCardsProps {
     techologiesPromise: Promise<TechnologyType[]>
@@ -25,7 +26,7 @@ const Technologies = ({ techologiesPromise }: TechnologiesCardsProps) => {
 
                     </div>
                     <div className="col-span-3">
-                        <div className="bg-amber-700 h-10"></div>
+                        <Stack></Stack>
                     </div>
                 </div>
             </div>
