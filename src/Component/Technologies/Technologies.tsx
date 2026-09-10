@@ -1,13 +1,15 @@
-import { Suspense } from "react";
+import { use } from "react";
+import type { TechnologyType } from "../../Types/type";
 import TechnologiesCards from "../TechnologyCards/TechnologyCard";
 
-const Technologies = () => {
+interface TechnologiesCardsProps {
+    techologiesPromise: Promise<TechnologyType[]>
+}
 
-    const techologiesPromise = async () => {
-        const res = await fetch("/public/technology_data.json")
-        const data = await res.json()
-        return data
-    }
+const Technologies = ({ techologiesPromise }: TechnologiesCardsProps) => {
+
+    const technologies = use(techologiesPromise)
+
     return (
         <div>
             <div className="container mx-auto">
@@ -19,9 +21,7 @@ const Technologies = () => {
                 <div className="grid grid-cols-12 gap-10 mt-14">
                     <div className="col-span-9 gap-2">
 
-                        <Suspense fallback={<div>Loading...</div>}>
-                            <TechnologiesCards techologiesPromise={techologiesPromise()}></TechnologiesCards>
-                        </Suspense>
+                        <TechnologiesCards technologies={technologies}></TechnologiesCards>
 
                     </div>
                     <div className="col-span-3">
