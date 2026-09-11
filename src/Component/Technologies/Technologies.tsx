@@ -1,6 +1,6 @@
-import { use } from "react";
+import { use, useState } from "react";
 import type { TechnologyType } from "../../Types/type";
-import TechnologiesCards from "../TechnologyCards/TechnologyCard";
+import TechnologiesCards from "../TechnologyCards/TechnologyCards";
 import StackSidebar from "../StackSidebar/StackSidebar";
 interface TechnologiesCardsProps {
     techologiesPromise: Promise<TechnologyType[]>
@@ -9,6 +9,8 @@ interface TechnologiesCardsProps {
 const Technologies = ({ techologiesPromise }: TechnologiesCardsProps) => {
 
     const technologies = use(techologiesPromise)
+
+    const [selectedStack, setSelectedStack] = useState<TechnologyType[]>([])
 
     return (
         <div>
@@ -21,11 +23,18 @@ const Technologies = ({ techologiesPromise }: TechnologiesCardsProps) => {
                 <div className="grid grid-cols-12 gap-10 mt-14">
                     <div className="col-span-9 gap-2">
 
-                        <TechnologiesCards technologies={technologies}></TechnologiesCards>
+                        <TechnologiesCards 
+                        selectedStack={selectedStack}
+                        setSelectedStack={setSelectedStack}
+                        technologies={technologies}
+                        ></TechnologiesCards>
 
                     </div>
                     <div className="col-span-3" >
-                        <StackSidebar></StackSidebar>
+                        <StackSidebar
+                        selectedStack={selectedStack}
+                        setSelectedStack={setSelectedStack}
+                        ></StackSidebar>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import Banner from './Component/Banner/Banner'
 import Nav from './Component/Nav/Nav'
 import Technologies from './Component/Technologies/Technologies'
 import Footer from './Component/Footer/Footer'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Technologies techologiesPromise={techologiesPromise()}></Technologies>
       </Suspense>
       <Footer></Footer>
+      <ToastContainer />
     </>
   )
 }
