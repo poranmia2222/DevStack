@@ -49,7 +49,7 @@ const Footer = () => {
                     <p className='flex gap-2 items-center'><FaRegCopyright /> 2026 Dev Stack. All rights reserved.</p>
                     <ul className='flex gap-4'>
                         <li><a href='#'>Privacy</a></li>
-                        <li><a href='#'>term</a></li>
+                        <li><a href='#'>terms</a></li>
                     </ul>
                 </div>
             </div>

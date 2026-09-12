@@ -1,11 +1,30 @@
 /* fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: #475569;
 }
-@import "tailwindcss";
-@plugin "daisyui";
 
+
+:root {
+  --brand-gradient: linear-gradient(
+    to right,#FF5722,#D81B7E,#7C3AED
+  );
+}
+
+.gradient-text {
+  background: var(--brand-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-button {
+  background: var(--brand-gradient);
+  color: white;
+}

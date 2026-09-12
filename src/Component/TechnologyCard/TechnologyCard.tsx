@@ -19,6 +19,7 @@ const TechnologyCard = ({ technology, selectedStack, setSelectedStack }: Technol
 
     const handeAddStackButton = () => {
 
+
         setSelectedStack([...selectedStack, technology])
 
         toast.success(`${technology.name} has been added successfully to the stack!`, {
@@ -34,6 +35,7 @@ const TechnologyCard = ({ technology, selectedStack, setSelectedStack }: Technol
         });
 
     }
+
 
     return (
         <div className={`${isDisabled ? 'border-[#059669]' : 'border-slate-200'} flex flex-col space-y-4 border rounded-2xl p-4 transition-all duration-300
