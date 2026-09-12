@@ -8,7 +8,7 @@ interface TechnologiesCardsProps {
     setSelectedStack: Dispatch<SetStateAction<TechnologyType[]>>
 }
 
-const TechnologiesCards = ({ technologies, selectedStack, setSelectedStack }: TechnologiesCardsProps) => {
+const TechnologiesCards = ({ technologies, selectedStack, setSelectedStack, }: TechnologiesCardsProps) => {
 
     return (
         <div className="grid grid-cols-3 gap-10">

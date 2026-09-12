@@ -12,6 +12,7 @@ const Technologies = ({ techologiesPromise }: TechnologiesCardsProps) => {
 
     const [selectedStack, setSelectedStack] = useState<TechnologyType[]>([])
 
+
     return (
         <div>
             <div className="container mx-auto">

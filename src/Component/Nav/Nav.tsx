@@ -4,11 +4,11 @@ import logo from '../../assets/logo-text.png'
 const Nav = () => {
 
     const [active, setActive] = useState("Home");
-    const navItems = ["Home", "About", "Services", "Contact"];
+    const navItems = ["Home", "Technologies", "Projects", "About", "Contact"];
 
     return (
         <nav className="border-b border-gray-100 bg-white/85 backdrop-blur-md sticky top-0 z-50">
-            <div className="container mx-auto flex justify-between items-center py-4 px-6 ">
+            <div className="container mx-auto flex justify-between items-center py-4">
                 <img src={logo} alt="" />
                 <ul className="flex gap-6 font-semibold">
                     {navItems.map((item) => (
@@ -17,7 +17,7 @@ const Nav = () => {
                             onClick={() => setActive(item)}
                             className={`cursor-pointer hover:text-[#334155] ${active === item ? "text-[#D91B7E]" : "text-gray-500"
                                 }`}
-                        >{item}
+                        ><a href='#'>{item}</a>
                         </li>
                     ))}
                 </ul>

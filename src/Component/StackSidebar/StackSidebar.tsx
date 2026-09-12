@@ -8,7 +8,7 @@ interface SelectedTechnologies {
     setSelectedStack: Dispatch<SetStateAction<TechnologyType[]>>
 }
 
-const Stack = ({ selectedStack, setSelectedStack }: SelectedTechnologies) => {
+const Stack = ({ selectedStack, setSelectedStack}: SelectedTechnologies) => {
 
     return (
         <aside className="border border-slate-200 rounded-2xl p-4 space-y-2 sticky top-24" >
