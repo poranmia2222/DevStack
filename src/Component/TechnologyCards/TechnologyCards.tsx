@@ -11,7 +11,7 @@ interface TechnologiesCardsProps {
 const TechnologiesCards = ({ technologies, selectedStack, setSelectedStack, }: TechnologiesCardsProps) => {
 
     return (
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
             {technologies.map(technology =>
 
                 <TechnologyCard

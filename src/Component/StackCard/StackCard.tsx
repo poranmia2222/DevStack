@@ -13,7 +13,6 @@ interface TechnologyProps {
 const StackCard = ({ technology, selectedStack, setSelectedStack}: TechnologyProps) => {
 
     const handleDeleteStack = () => {
-        console.log("Stack Deleted!", technology)
 
         const filterSelectedStack = selectedStack.filter(stack => stack.id !== technology.id)
 
