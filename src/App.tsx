@@ -11,7 +11,7 @@ function App() {
     <>
       <Nav />
       <Banner></Banner>
-        <Technologies></Technologies>
+      <Technologies></Technologies>
       <Footer></Footer>
       <ToastContainer />
     </>

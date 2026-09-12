@@ -37,7 +37,7 @@ const StackCard = ({ technology, selectedStack, setSelectedStack}: TechnologyPro
             <div className="flex gap-4">
                 <img className="w-10" src={technology.icon} alt="" />
                 <div>
-                    <h3 className="font-bold">{technology.name}</h3>
+                    <h3 className="font-bold text-[#0F172A]">{technology.name}</h3>
                     <p className="text-sm">{technology.category}</p>
                 </div>
             </div>

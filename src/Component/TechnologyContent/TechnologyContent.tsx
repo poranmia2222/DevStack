@@ -33,7 +33,7 @@ const TechnologyContent = ({
                 <StackSidebar
                     selectedStack={selectedStack}
                     setSelectedStack={setSelectedStack}
-                />
+                ></StackSidebar>
             </div>
 
         </div>

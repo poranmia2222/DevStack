@@ -12,7 +12,7 @@ const Footer = () => {
                         <img src={logo} alt="" />
                         <p>Curated tools, technologies, and resources for developers building
                             modern software.</p>
-                        <ul className='flex gap-4'>
+                        <ul className='flex gap-4 font-semibold'>
                             <li><a>GitHub</a></li>
                             <li><a>Twitter</a></li>
                             <li><a>LinkedIn</a></li>
@@ -49,7 +49,7 @@ const Footer = () => {
                     <p className='flex gap-2 items-center'><FaRegCopyright /> 2026 Dev Stack. All rights reserved.</p>
                     <ul className='flex gap-4'>
                         <li><a href='#'>Privacy</a></li>
-                        <li><a href='#'>terms</a></li>
+                        <li><a href='#'>Terms</a></li>
                     </ul>
                 </div>
             </div>

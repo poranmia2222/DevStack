@@ -44,7 +44,7 @@ const TechnologyCard = ({ technology, selectedStack, setSelectedStack }: Technol
                 <img className="w-10" src={technology.icon} alt="" />
                 <p className="bg-[#ECFDF5] px-4 py-1 rounded-lg border border-[#059669] font-semibold text-sm text-[#059669]">{technology.badge}</p>
             </div>
-            <h3 className="md:text-xl font-bold">{technology.name}</h3>
+            <h3 className="md:text-xl font-bold text-[#0F172A]">{technology.name}</h3>
             <p className="text-sm md:text-base">{technology.description}</p>
             <div className="divider"></div>
             <div className=" flex justify-between items-center mt-auto text-sm font-semibold text-[#334155]">

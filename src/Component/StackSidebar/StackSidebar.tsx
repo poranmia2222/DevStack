@@ -12,7 +12,7 @@ const Stack = ({ selectedStack, setSelectedStack}: SelectedTechnologies) => {
 
     return (
         <aside className="border border-slate-200 rounded-2xl p-4 space-y-2 sticky top-24" >
-            <h2 className="text-xl font-bold">Your Stack</h2>
+            <h2 className="text-xl font-bold text-[#0F172A]">Your Stack</h2>
             <p className="font-semibold text-sm">{
                 selectedStack.length > 0 ? `${selectedStack.length} Technology Selected` : "No technologies selected yet."
             }</p>
